@@ -1,0 +1,62 @@
+:root {
+	--primary: #909faa;
+	--secondary: #104547;
+	--secondary-two: #727072;
+	--accent: #afebd0;
+}
+
+/* Element selectors */
+
+header {
+	background-color: var(--secondary);
+	color: var(--accent);
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 225%;
+	display: inline-block;
+}
+
+header div {
+	float: right;
+}
+
+header div ul {
+	display: flex;
+}
+
+header div li {
+	margin: 10px;
+}
+
+main img {
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	margin-bottom: 40px;
+}
+
+body {
+	background-color: var(--primary);
+}
+
+section {
+	display: flex;
+	margin: 0 10%;
+}
+
+section h2 {
+	font-size: 220%;
+	color: var(--accent);
+	width: 20;
+	border-right: 5px solid var(--accent);
+	text-align: right;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+
+section div p {
+	line-height: 22px;
+}
