@@ -53,9 +53,9 @@ section {
 
 section h2 {
 	font-size: 220%;
-	color: var(--accent);
-	flex: 0 0 150px;
-	border-right: 5px solid var(--accent);
+	color: var(--secondary);
+	flex: 0 0 175px;
+	border-right: 5px solid var(--secondary);
 	text-align: right;
 	margin-right: 30px;
 	padding-right: 20px;
@@ -99,4 +99,23 @@ section > div > p {
 .sub-project {
 	flex: 1 1 40%;
 	max-height: 300px;
+}
+
+/* Id selectors */
+
+#contact div {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-around;
+}
+
+#contact h3 {
+	font-size: 175%;
+	color: var(--secondary);
+}
+
+#contact a {
+	color: var(--secondary);
 }
