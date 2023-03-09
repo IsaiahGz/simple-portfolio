@@ -162,3 +162,29 @@ h3 {
 	text-decoration: none;
 	border-bottom: 5px solid;
 }
+
+/* Screen resizing */
+
+@media screen and (max-width: 1080px) {
+	section {
+		margin: 20px 6%;
+	}
+
+	#main-image img {
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	section {
+		margin: 20px 4%;
+	}
+
+	.sub-project {
+		flex: 1 1 80%;
+	}
+
+	#contact h3 {
+		font-size: 150%;
+	}
+}
