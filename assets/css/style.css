@@ -26,20 +26,18 @@ header div {
 	float: right;
 }
 
+header a {
+	text-decoration: none;
+	color: var(--accent);
+	border-bottom: 3px solid;
+}
+
 header div ul {
 	display: flex;
 }
 
 header div li {
 	margin: 10px;
-}
-
-main > img {
-	height: 250px;
-	width: 100%;
-	object-fit: cover;
-	object-position: center;
-	margin-bottom: 20px;
 }
 
 body {
@@ -103,6 +101,27 @@ section > div > p {
 
 /* Id selectors */
 
+#main-image {
+	position: relative;
+}
+
+#main-image .profile {
+	position: absolute;
+	top: 20%;
+	left: 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+#main-image img {
+	object-fit: cover;
+	object-position: center;
+	height: 425px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
 #contact div {
 	margin-top: 25px;
 	display: flex;
@@ -118,4 +137,6 @@ section > div > p {
 
 #contact a {
 	color: var(--secondary);
+	text-decoration: none;
+	border-bottom: 5px solid;
 }
