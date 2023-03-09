@@ -30,6 +30,7 @@ header a {
 	text-decoration: none;
 	color: var(--accent);
 	border-bottom: 3px solid;
+	font-size: 140%;
 }
 
 header div ul {
@@ -67,6 +68,10 @@ section > div > p {
 	line-height: 25px;
 }
 
+h3 {
+	font-size: 160%;
+}
+
 /* Class selectors */
 
 .projects {
@@ -83,6 +88,8 @@ section > div > p {
 	object-position: center;
 	width: 100%;
 	height: 100%;
+	opacity: 60%;
+	transition: opacity 0.2s ease-in-out;
 }
 
 .projects > div {
@@ -92,11 +99,26 @@ section > div > p {
 .main-project {
 	flex-basis: 100%;
 	max-height: 500px;
+	position: relative;
 }
 
 .sub-project {
 	flex: 1 1 40%;
 	max-height: 300px;
+	position: relative;
+}
+
+.project-card {
+	position: absolute;
+	bottom: 20px;
+	padding: 7px;
+	background-color: var(--accent);
+	color: var(--secondary);
+}
+
+.main-project a:hover img,
+.sub-project a:hover img {
+	opacity: 100%;
 }
 
 /* Id selectors */
